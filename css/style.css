@@ -100,13 +100,45 @@ nav .selected {
     font-size: 20px;
 }
 
+.user {
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    background-color: black;
+}
+
+.user img {
+    width: 10%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.user .name {
+    color: white;
+
+}
+
+.user>a {
+    padding: 5px 0;
+    border-top: 1px solid #a3a3a3;
+}
+
+.name img {
+    width: 15%;
+    background-color: #a3a3a3;
+    border-radius: 999px;
+}
+
+
 /* nav hover  */
-nav a:hover{
+nav a:hover {
     color: white;
 }
 
 
 main {
+    background-color: #141922;
+    color: #a3a3a3;
     flex-basis: calc(100% - 250px);
     position: relative;
     overflow: auto;
@@ -123,7 +155,7 @@ main {
 
 }
 
-.upgrade div{
+.upgrade div {
     color: white;
     display: inline-block;
     border: 2px solid white;
@@ -131,6 +163,32 @@ main {
     padding: 10px 40px;
     margin-right: 20px;
 
+}
+
+.nav-main {
+    margin: 10px 20px;
+}
+
+.nav-main ul {
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-main li {
+    margin: 10px;
+    font-weight: 500;
+}
+
+.nav-main a {
+    color: #a3a3a3;
+}
+
+.nav-main .selected {
+    border-bottom: 3px solid #adff2f;
+}
+
+.nav-main a:hover {
+    color: white;
 }
 
 
@@ -155,7 +213,7 @@ main {
 
     nav .icon {
         width: 100%;
-    
+
     }
 
     .remove {
