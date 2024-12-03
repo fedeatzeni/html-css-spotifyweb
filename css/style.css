@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* debug  */
+.bg-cyan {
+    background-color: cyan;
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+.bg-magenta {
+    background-color: magenta;
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+/* desktop  */
+
+/* main  */
+.container {
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+nav {
+    flex-basis: 250px;
+}
+
+main {
+    flex-basis: calc(100% - 250px);
+    position: relative;
+    overflow: auto;
+    height: 100%;
+
+}
+
+.upgrade {
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+
+
+/* player  */
+.player {
+    height: 100px;
+}
+
+/* medium */
+
+
+/* small  */
+@media screen and (max-width: 400px) {
+
+    nav {
+        flex-basis: 80px;
+    }
+
+    
+main {
+    flex-basis: calc(100% - 80px);
+}
+
+}
