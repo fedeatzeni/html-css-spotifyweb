@@ -118,6 +118,19 @@ main {
     height: 100px;
     position: sticky;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
+
+}
+
+.upgrade div{
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-right: 20px;
+
 }
 
 
