@@ -386,6 +386,26 @@ main .artist:hover .opacity {
     background-color: #adff2f;
 }
 
+.volume.flex{
+    gap: 20px;
+}
+
+.dot{
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    display: none;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    text-align: end;
+}
+
+
+.lines:hover .dot {
+    display: inline-block;
+}
 
 
 /* medium */
