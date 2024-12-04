@@ -318,6 +318,10 @@ main .artist:hover .opacity {
     flex-basis: 25%;
 }
 
+.current .flex {
+    gap: 20px;
+}
+
 .current img {
     width: 60px;
     margin-right: 20px;
@@ -325,7 +329,6 @@ main .artist:hover .opacity {
 
 .current .title {
     display: inline-block;
-    width: 150px;
     flex: 50%;
     color: white;
     font-weight: 700;
@@ -405,6 +408,11 @@ main .artist:hover .opacity {
 
 .lines:hover .dot {
     display: inline-block;
+}
+
+
+.volume i:hover {
+    color: white;
 }
 
 
