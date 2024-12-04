@@ -25,6 +25,7 @@
 .flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 a {
@@ -113,7 +114,7 @@ nav .selected {
     margin-bottom: 10px;
 }
 
-.user .name {
+.user .user-name {
     color: white;
 
 }
@@ -123,7 +124,7 @@ nav .selected {
     border-top: 1px solid #a3a3a3;
 }
 
-.name img {
+.user-name img {
     width: 15%;
     background-color: #a3a3a3;
     border-radius: 999px;
@@ -146,9 +147,11 @@ main {
 
 }
 
+/* banner  */
 .upgrade {
     height: 100px;
     position: sticky;
+    z-index: 999;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: flex-end;
@@ -162,9 +165,14 @@ main {
     border-radius: 20px;
     padding: 10px 40px;
     margin-right: 20px;
+}
+
+.upgrade div:hover {
+    padding: 10px 60px;
 
 }
 
+/* main nav  */
 .nav-main {
     margin: 10px 20px;
 }
@@ -191,6 +199,102 @@ main {
     color: white;
 }
 
+/* main genral  */
+main h2 {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.row {
+    /* flex  */
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+main .title {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+main img {
+    width: 100%;
+    padding: 10px
+}
+
+/* recently */
+.recently {
+    padding: 10px;
+}
+
+.album {
+    flex-basis: 15%;
+}
+
+.album div {
+    text-align: center;
+}
+
+/* created  */
+.created {
+    padding: 10px;
+}
+
+.created .description {
+    margin-left: 30px;
+    margin-bottom: 20px;
+
+}
+
+/* artists */
+.artists {
+    padding: 10px;
+}
+
+.artist img {
+    border-radius: 50%;
+}
+
+/* main hover  */
+
+.rel {
+    position: relative;
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    height: 90%;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.opacity i {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    z-index: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+main .album:hover .opacity {
+    display: block;
+}
+
+
+main .artist:hover .opacity {
+    display: block;
+    border-radius: 50%;
+}
+
 
 /* player  */
 #player {
@@ -198,6 +302,21 @@ main {
 }
 
 /* medium */
+@media screen and (max-width: 878px) {
+
+    .album {
+        flex-basis: 20%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .album {
+        flex-basis: 45%;
+    }
+
+}
 
 
 /* small  */
