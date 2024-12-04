@@ -299,7 +299,94 @@ main .artist:hover .opacity {
 /* player  */
 #player {
     height: 100px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    color: #a3a3a3;
+    padding: 20px;
 }
+
+#player > div {
+    flex-basis: 20%;
+}
+
+#player .timeline {
+    flex-basis: 40%;
+}
+
+#player .current {
+    flex-basis: 25%;
+}
+
+.current img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.current .title {
+    display: inline-block;
+    width: 150px;
+    flex: 50%;
+    color: white;
+    font-weight: 700;
+}
+
+.current .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.current i:hover {
+    color: white;
+}
+
+.current i {
+    font-size: 20px;
+}
+
+.timeline .flex {
+    gap: 20px;
+    justify-content: center;
+}
+
+.timeline .icons {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.timeline .bar {
+    justify-content: space-between;
+    color: white;
+    font-weight: 700;
+}
+
+
+.lines{
+    flex-grow: 1;
+    position: relative;
+}
+
+.lines .line {
+    height: 5px;
+    background-color: #a3a3a3;
+    border-radius: 999px;
+}
+
+.lines .line-white {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 5px;
+    background-color: white;
+    border-radius: 999px;
+}
+
+.lines:hover .line-white {
+    background-color: #adff2f;
+}
+
+
 
 /* medium */
 @media screen and (max-width: 878px) {
@@ -320,7 +407,7 @@ main .artist:hover .opacity {
 
 
 /* small  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
 
     .add {
         display: block;
