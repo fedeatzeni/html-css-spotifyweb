@@ -50,23 +50,26 @@ nav {
     background-color: black;
     color: #a3a3a3;
     font-weight: 500;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .logo {
-    height: 60px;
+    height: 50px;
     margin: 20px;
 }
 
 nav .icon {
     width: 10%;
     margin: 5px 20px;
-
 }
 
 nav a {
     color: #a3a3a3;
 
+}
+
+nav .icon {
+    fill: #a3a3a3;;
 }
 
 nav .selected {
@@ -104,7 +107,7 @@ nav .selected {
 .user {
     position: sticky;
     bottom: 0;
-    padding: 20px;
+    padding: 15px;
     background-color: black;
 }
 
@@ -116,11 +119,14 @@ nav .selected {
 
 .user .user-name {
     color: white;
+}
 
+.user span {
+    margin-bottom: 10px;
 }
 
 .user>a {
-    padding: 5px 0;
+    padding-top: 10px;
     border-top: 1px solid #a3a3a3;
 }
 
@@ -304,9 +310,10 @@ main .artist:hover .opacity {
     justify-content: space-between;
     color: #a3a3a3;
     padding: 20px;
+    overflow: hidden;
 }
 
-#player > div {
+#player>div {
     flex-basis: 20%;
 }
 
@@ -364,8 +371,7 @@ main .artist:hover .opacity {
     font-weight: 700;
 }
 
-
-.lines{
+.lines {
     flex-grow: 1;
     position: relative;
 }
@@ -389,11 +395,15 @@ main .artist:hover .opacity {
     background-color: #adff2f;
 }
 
-.volume.flex{
+.volume.flex {
     gap: 20px;
 }
 
-.dot{
+.volume .lines {
+    flex-basis: 50%;
+}
+
+.dot {
     position: absolute;
     top: -7px;
     right: -10px;
@@ -421,6 +431,11 @@ main .artist:hover .opacity {
 
     .album {
         flex-basis: 20%;
+    }
+
+
+    .current img {
+        display: none;
     }
 
 }
@@ -458,8 +473,4 @@ main .artist:hover .opacity {
 
         flex-basis: calc(100% - 80px);
     }
-
-
-
-
 }
